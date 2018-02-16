@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Input, Button } from 'semantic-ui-react';
 import * as courseActions from '../../actions/courseActions';
+import PropTypes from 'prop-types';
 
 class CoursesPage extends React.Component {
   constructor(props, context) {
@@ -43,6 +44,11 @@ class CoursesPage extends React.Component {
     );
   }
 }
+
+CoursesPage.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  courses: PropTypes.array.isRequired
+};
 
 function mapStateToProps(state, ownProps) {
   return {
