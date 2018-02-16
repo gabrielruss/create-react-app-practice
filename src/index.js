@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles/index.css';
-import { Router } from 'react-router-dom'; 
+import { Router } from 'react-router-dom';
 import App from './components/App';
 import createBrowserHistory from 'history/createBrowserHistory'
 import registerServiceWorker from './registerServiceWorker';
+
 
 const history = createBrowserHistory();
 
