@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <nav>
-    <Link to="/" activeClassName="active">Home</Link>
+    <NavLink to="/" activeClassName="active">Home</NavLink>
     {" | "}
-    <Link to="/about" activeClassName="active">About</Link>
+    <NavLink to="/about" activeClassName="active">About</NavLink>
   </nav>
 );
 
